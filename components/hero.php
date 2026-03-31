@@ -9,18 +9,27 @@
             <h1>Growth-Focused <span>Business Solutions</span> Tailored for You</h1>
             <p>From company registration to high-performance digital marketing, we provide end-to-end services to scale your business with confidence.</p>
 
-            <div class="trust-stats">
-                <div class="stat-item">
-                    <span class="stat-value">Client Satifaction</span>
-                    <span class="stat-label">99.8%</span>
+            <div class="trust-grid">
+                <div class="stat-box">
+                    <i class="fas fa-smile"></i>
+                    <div>
+                        <span class="stat-value">99.8%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-value">Projects Done</span>
-                    <span class="stat-label">1200+</span>
+                <div class="stat-box">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <span class="stat-value">1200+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-value">Since</span>
-                    <span class="stat-label">2010</span>
+                <div class="stat-box live">
+                    <div class="live-dot"></div>
+                    <div>
+                        <span class="stat-value blinking">Live Now</span>
+                        <span class="stat-label">15+ Experts Online</span>
+                    </div>
                 </div>
             </div>
         </div>
