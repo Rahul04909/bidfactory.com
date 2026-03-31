@@ -5,9 +5,10 @@
     <div class="hero-container">
         <!-- Hero Content -->
         <div class="hero-content">
-            <span class="hero-badge">Expert Consultancy Services</span>
-            <h1>Growth-Focused <span>Business Solutions</span> Tailored for You</h1>
-            <p>From company registration to high-performance digital marketing, we provide end-to-end services to scale your business with confidence.</p>
+            <span class="hero-badge">Welcome to Bidfactory.co.in</span>
+            <h1>Goverment Procurement & <span>Business Enablement</span> Services</h1>
+            <p>From company registration to high-performance digital marketing, we provide end-to-end services to scale
+                your business with confidence.</p>
 
             <div class="trust-grid">
                 <div class="stat-box">
@@ -47,7 +48,8 @@
 
                 <div class="form-group">
                     <label for="heroMobile">Mobile Number</label>
-                    <input type="tel" id="heroMobile" class="form-control" placeholder="e.g. 9876543210" maxlength="10" required>
+                    <input type="tel" id="heroMobile" class="form-control" placeholder="e.g. 9876543210" maxlength="10"
+                        required>
                 </div>
 
                 <div class="form-group">
