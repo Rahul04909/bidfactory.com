@@ -23,8 +23,20 @@
         <span>Bid<span>Factory</span></span>
     </a>
 
+    <div class="menu-overlay"></div>
+
     <nav class="nav-container">
         <ul class="nav-menu">
+            <!-- Sidebar Header for Mobile -->
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span>Bid<span>Factory</span></span>
+                </div>
+                <div class="menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
             <li class="nav-item dropdown-toggle">
