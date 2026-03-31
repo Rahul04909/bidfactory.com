@@ -36,21 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const dropdownMenu = dropdownToggle.querySelector('.dropdown');
 
-    dropdownToggle.querySelector('.nav-link').addEventListener('click', (e) => {
-        if (window.innerWidth <= 1100) {
-            e.preventDefault();
-            const isOpen = dropdownMenu.classList.contains('show');
-            
-            // Close if open, open if closed
-            if (isOpen) {
-                dropdownMenu.classList.remove('show');
-                dropdownToggle.classList.remove('active');
-            } else {
-                dropdownMenu.classList.add('show');
-                dropdownToggle.classList.add('active');
+    if (dropdownToggle) {
+        dropdownToggle.querySelector('.nav-link').addEventListener('click', (e) => {
+            if (window.innerWidth <= 1100) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent bubbling to the nav-menu
+                
+                dropdownMenu.classList.toggle('show');
+                dropdownToggle.classList.toggle('active');
             }
-        }
-    });
+        });
+    }
 
     // Close menu when clicking on a regular nav link
     navMenu.querySelectorAll('.nav-link').forEach(link => {

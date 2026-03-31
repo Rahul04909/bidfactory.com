@@ -18,6 +18,11 @@
     font-family: 'Inter', sans-serif;
 }
 
+.header ul, 
+.header li {
+    list-style: none !important;
+}
+
 body {
     background-color: #f8f9fa;
 }
