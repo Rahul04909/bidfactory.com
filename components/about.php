@@ -22,24 +22,6 @@
                     registrations</strong>, and complex <strong>e-tender portals</strong>, we provide a seamless
                 'Registration-to-Revenue' journey.</p>
 
-            <div class="about-features">
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>GeM & E-Tender Portal Mastery</span>
-                </div>
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Registration-to-Revenue Expertise</span>
-                </div>
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Direct Compliance & Bid Submission Handle</span>
-                </div>
-            </div>
-
-            <p>Our end-to-end solutions handle the technicalities of bid submission and compliance, liberating you to
-                focus on your core mission: building world-class businesses.</p>
-
             <a href="#" class="btn-about">Explore Our Services</a>
         </div>
     </div>
