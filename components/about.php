@@ -2,6 +2,12 @@
 <link rel="stylesheet" href="assets/css/about.css">
 
 <section class="about-section">
+    <!-- Full Width Header Box -->
+    <div class="about-header-box">
+        <span class="about-overline">Who We Are</span>
+        <h2>Empowering India's <span>Business Ecosystem</span></h2>
+    </div>
+
     <div class="about-container">
         <!-- Visual Column -->
         <div class="about-visual">
@@ -11,8 +17,6 @@
 
         <!-- Content Column -->
         <div class="about-content">
-            <span class="about-overline">Who We Are</span>
-            <h2>Empowering India's <span>Business Ecosystem</span></h2>
 
             <p>At <strong>BidFactory</strong>, we are more than just consultants; we are your strategic catalysts for
                 growth. Based in the heart of Delhi NCR, we specialize in bridging the gap between ambitious MSMEs,

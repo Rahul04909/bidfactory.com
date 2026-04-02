@@ -1,17 +1,53 @@
 /* About Section CSS - High-Density UI */
 .about-section {
-    padding: 100px 5% 100px;
+    padding: 0;
     background-color: #ffffff;
     overflow: hidden;
 }
 
+/* New Heading Box Styling */
+.about-header-box {
+    background-color: #0b213b;
+    padding: 60px 5%;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+    border-bottom: 4px solid #1d7a76;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.about-header-box .about-overline {
+    color: #1d7a76;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.about-header-box h2 {
+    color: #ffffff;
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -1.5px;
+}
+
+.about-header-box h2 span {
+    color: #cfa64b;
+}
+
 .about-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
+    padding: 0 5%;
 }
 
 /* About Visual Column */
@@ -63,29 +99,6 @@
     animation: fadeInSlideLeft 1s ease-out;
 }
 
-.about-overline {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: #006aff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-    display: block;
-}
-
-.about-content h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.15;
-    color: #111827;
-    margin-bottom: 25px;
-    letter-spacing: -1.2px;
-}
-
-.about-content h2 span {
-    color: #006aff;
-}
-
 .about-content p {
     font-size: 1.1rem;
     line-height: 1.7;
@@ -133,7 +146,11 @@
     box-shadow: 0 8px 25px rgba(0, 106, 255, 0.4);
 }
 
-/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes fadeInSlideRight {
     from { opacity: 0; transform: translateX(-30px); }
     to { opacity: 1; transform: translateX(0); }
