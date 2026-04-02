@@ -25,8 +25,6 @@
             <p>With mastery over <strong>GeM (Government e-Marketplace)</strong>, <strong>MSME/DPIIT
                     registrations</strong>, and complex <strong>e-tender portals</strong>, we provide a seamless
                 'Registration-to-Revenue' journey.</p>
-
-            <a href="#" class="btn-about">Explore Our Services</a>
         </div>
     </div>
 </section>
