@@ -1,0 +1,196 @@
+/* Digital Marketing & Online Presence CSS - Professional Conversion UI */
+.marketing-services-section {
+    padding: 80px 5%;
+    background-color: #f8fafc; /* Subtle light background to differentiate from GeM section */
+    font-family: 'Inter', sans-serif;
+}
+
+.marketing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    color: #0b213b;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.section-header p {
+    font-size: 1.15rem;
+    color: #64748b;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Pricing Badge */
+.pricing-badge {
+    background: linear-gradient(135deg, #1d7a76 0%, #0b213b 100%);
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(29, 122, 118, 0.2);
+    border: 2px solid #cfa64b;
+    margin-bottom: 20px;
+}
+
+.pricing-badge span {
+    color: #cfa64b;
+}
+
+/* Services Table Styling */
+.services-table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.marketing-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.marketing-table thead th {
+    background-color: #1d7a76;
+    color: #ffffff;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.marketing-table tbody tr {
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.3s ease;
+}
+
+.marketing-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.marketing-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.marketing-table td {
+    padding: 20px;
+    color: #334155;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.marketing-table td:first-child {
+    font-weight: 800;
+    color: #1d7a76;
+    width: 50px;
+    text-align: center;
+}
+
+.marketing-table .service-name {
+    font-weight: 700;
+    color: #1e293b;
+    min-width: 200px;
+}
+
+.marketing-table .additional-charges {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.marketing-table .included {
+    color: #10b981;
+    font-weight: 700;
+}
+
+/* CTA Button */
+.cta-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-book-now {
+    background-color: #cfa64b;
+    color: #ffffff;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 6px 20px rgba(207, 166, 75, 0.3);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-book-now:hover {
+    background-color: #0b213b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(11, 33, 59, 0.4);
+}
+
+/* Responsive Table (Mobile Cards) */
+@media screen and (max-width: 800px) {
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .marketing-table thead {
+        display: none;
+    }
+
+    .marketing-table, .marketing-table tbody, .marketing-table tr, .marketing-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .marketing-table tr {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+    }
+
+    .marketing-table td {
+        padding: 10px 0;
+        text-align: left;
+        border: none;
+    }
+
+    .marketing-table td:first-child {
+        display: inline-block;
+        width: auto;
+        background: #1d7a76;
+        color: #fff;
+        padding: 2px 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .marketing-table td::before {
+        content: attr(data-label);
+        font-weight: 800;
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #64748b;
+        margin-bottom: 4px;
+    }
+}
