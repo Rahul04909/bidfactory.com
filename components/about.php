@@ -5,7 +5,7 @@
     <div class="about-container">
         <!-- Visual Column -->
         <div class="about-visual">
-            <img src="../assets/frontend/front-about-us.png" alt="BidFactory Consultants in a Strategic Meeting"
+            <img src="../assets/frontend/front-about.jpeg" alt="BidFactory Consultants in a Strategic Meeting"
                 class="about-image">
         </div>
 
