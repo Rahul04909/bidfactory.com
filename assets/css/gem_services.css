@@ -1,0 +1,196 @@
+/* GeM & Registration Services CSS - High-Density Conversion UI */
+.gem-services-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.gem-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    color: #0b213b;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.section-header p {
+    font-size: 1.15rem;
+    color: #64748b;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Pricing Badge */
+.pricing-badge {
+    background: linear-gradient(135deg, #0b213b 0%, #1d7a76 100%);
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(11, 33, 59, 0.2);
+    border: 2px solid #cfa64b;
+    margin-bottom: 20px;
+}
+
+.pricing-badge span {
+    color: #cfa64b;
+}
+
+/* Services Table Styling */
+.services-table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.gem-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.gem-table thead th {
+    background-color: #0b213b;
+    color: #ffffff;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gem-table tbody tr {
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.3s ease;
+}
+
+.gem-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.gem-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.gem-table td {
+    padding: 20px;
+    color: #334155;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.gem-table td:first-child {
+    font-weight: 800;
+    color: #0b213b;
+    width: 50px;
+    text-align: center;
+}
+
+.gem-table .service-name {
+    font-weight: 700;
+    color: #1e293b;
+    min-width: 200px;
+}
+
+.gem-table .additional-charges {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.gem-table .included {
+    color: #10b981;
+    font-weight: 700;
+}
+
+/* CTA Button */
+.cta-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-book-now {
+    background-color: #cfa64b;
+    color: #ffffff;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 6px 20px rgba(207, 166, 75, 0.3);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-book-now:hover {
+    background-color: #0b213b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(11, 33, 59, 0.4);
+}
+
+/* Responsive Table (Mobile Cards) */
+@media screen and (max-width: 800px) {
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .gem-table thead {
+        display: none;
+    }
+
+    .gem-table, .gem-table tbody, .gem-table tr, .gem-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .gem-table tr {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+    }
+
+    .gem-table td {
+        padding: 10px 0;
+        text-align: left;
+        border: none;
+    }
+
+    .gem-table td:first-child {
+        display: inline-block;
+        width: auto;
+        background: #0b213b;
+        color: #fff;
+        padding: 2px 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .gem-table td::before {
+        content: attr(data-label);
+        font-weight: 800;
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #64748b;
+        margin-bottom: 4px;
+    }
+}
