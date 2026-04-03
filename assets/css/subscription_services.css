@@ -1,6 +1,6 @@
 /* Subscription Services CSS - Premium Multi-Tier Layout */
 .subscription-services-section {
-    padding: 100px 5%;
+    padding: 100px 0;
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
 }
@@ -8,6 +8,7 @@
 .sub-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
 .sub-header {
@@ -27,76 +28,88 @@
     font-size: 1.15rem;
     color: #64748b;
     max-width: 900px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     line-height: 1.7;
 }
 
-/* What's Included Feature Grid */
+/* What's Included Feature Grid - Matches Service Highlights Style */
 .features-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #0b213b;
-    font-weight: 700;
-    margin-bottom: 30px;
+    font-weight: 800;
+    margin-bottom: 40px !important;
     text-align: center;
-    position: relative;
 }
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
     margin-bottom: 80px;
 }
 
 .feature-card {
-    background: #f8fafc;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
+    padding: 60px 25px;
+    text-align: center;
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    min-height: 280px;
 }
 
+/* Alternating Brand Colors */
+.feature-card.dark-blue {
+    background-color: #0b213b;
+}
+
+.feature-card.teal {
+    background-color: #1d7a76;
+}
+
+/* Hover Effect */
 .feature-card:hover {
-    transform: translateY(-5px);
-    border-color: #1d7a76;
-    box-shadow: 0 10px 25px rgba(29, 122, 118, 0.08);
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    z-index: 10;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .feature-card i {
-    font-size: 1.5rem;
-    color: #1d7a76;
-    background: rgba(29, 122, 118, 0.1);
-    width: 50px;
-    height: 50px;
+    font-size: 2.5rem;
+    color: #cfa64b; /* Gold Icon */
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    flex-shrink: 0;
+    border-radius: 50%;
 }
 
-.feature-card .feature-info h4 {
-    color: #0b213b;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+.feature-card h4 {
+    color: #cfa64b; /* Gold Heading to match Highlights */
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
 }
 
-.feature-card .feature-info p {
-    color: #64748b;
-    font-size: 0.95rem;
+.feature-card p {
+    color: #ffffff;
+    font-size: 1rem;
     line-height: 1.5;
-    margin: 0;
+    font-weight: 500;
+    margin: 0 auto;
 }
 
 /* Pricing Table */
 .pricing-title {
     font-size: 1.8rem;
     color: #0b213b;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -236,9 +249,15 @@
 }
 
 /* Responsive Table (Mobile Cards) */
+@media screen and (max-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (max-width: 900px) {
     .features-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sub-header h2 {
@@ -306,5 +325,15 @@
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-card {
+        padding: 50px 25px;
+        min-height: auto;
     }
 }

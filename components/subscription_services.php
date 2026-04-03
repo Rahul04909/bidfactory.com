@@ -9,45 +9,49 @@
             <p>Our all-inclusive subscription covers tender sourcing and end-to-end proposal development for any government department — State, Central, PSU, or Global. One plan. Complete coverage.</p>
         </div>
 
-        <!-- What's Included -->
+        <!-- What's Included Header -->
         <h3 class="features-title">What's Included</h3>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-search"></i>
-                <div class="feature-info">
-                    <h4>Keyword-Matched Identification</h4>
-                    <p>Tender identification across all government portals — State, Central, PSU and International.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-file-signature"></i>
-                <div class="feature-info">
-                    <h4>4 Proposals/Submissions</h4>
-                    <p>Up to 4 high-quality bid/proposal preparations and portal submissions per month.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-laptop-code"></i>
-                <div class="feature-info">
-                    <h4>End-to-End Development</h4>
-                    <p>Technical write-up, compliance check, and final digital portal submission management.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-user-shield"></i>
-                <div class="feature-info">
-                    <h4>Dedicated Account Manager</h4>
-                    <p>A strategic partner for bid strategy development and opportunity prioritisation.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-globe"></i>
-                <div class="feature-info">
-                    <h4>Global & Local Coverage</h4>
-                    <p>Covers Indian government tenders as well as global and international opportunities.</p>
-                </div>
-            </div>
+    </div>
+
+    <!-- Features Grid with Alternating Backgrounds -->
+    <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card dark-blue">
+            <i class="fas fa-search"></i>
+            <h4>Keyword-Matched Identification</h4>
+            <p>Tender identification across all government portals — State, Central, PSU and International.</p>
         </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card teal">
+            <i class="fas fa-file-signature"></i>
+            <h4>4 Proposals/Submissions</h4>
+            <p>Up to 4 high-quality bid/proposal preparations and portal submissions per month.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card dark-blue">
+            <i class="fas fa-laptop-code"></i>
+            <h4>End-to-End Development</h4>
+            <p>Technical write-up, compliance check, and final digital portal submission management.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card teal">
+            <i class="fas fa-user-shield"></i>
+            <h4>Dedicated Account Manager</h4>
+            <p>A strategic partner for bid strategy development and opportunity prioritisation.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card dark-blue">
+            <i class="fas fa-globe"></i>
+            <h4>Global & Local Coverage</h4>
+            <p>Covers Indian government tenders as well as global and international opportunities.</p>
+        </div>
+    </div>
+
+    <div class="sub-container">
 
         <!-- Subscription Pricing -->
         <h3 class="pricing-title">Subscription Pricing</h3>
