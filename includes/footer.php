@@ -5,10 +5,12 @@
     <div class="footer-container">
         <!-- Column 1: About & Socials -->
         <div class="footer-column footer-about">
-            <a href="#" class="logo" style="font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; text-decoration: none; color: #fff; display: block; margin-bottom: 20px;">
+            <a href="#" class="logo"
+                style="font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; text-decoration: none; color: #fff; display: block; margin-bottom: 20px;">
                 Bid<span style="color: #006aff;">Factory</span>
             </a>
-            <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We turn your vision into sustainable growth.</p>
+            <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We
+                turn your vision into sustainable growth.</p>
             <div class="social-links">
                 <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -47,7 +49,7 @@
             <ul class="contact-info">
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>BidFactory Tower, Business Hub, <br>Block-B, New Delhi - 110001, India</span>
+                    <span>New Delhi, India</span>
                 </li>
                 <li>
                     <i class="fas fa-phone-alt"></i>

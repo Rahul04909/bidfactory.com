@@ -1,0 +1,146 @@
+/* On-Demand Services CSS - Modern & Interactive Grid */
+.on-demand-section {
+    padding: 100px 5%;
+    background-color: #f1f5f9; /* Contrast background */
+    font-family: 'Inter', sans-serif;
+}
+
+.on-demand-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.on-demand-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.on-demand-header h2 {
+    font-size: 2.8rem;
+    color: #0b213b;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.on-demand-header p {
+    font-size: 1.15rem;
+    color: #64748b;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Service Cards Grid */
+.on-demand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.on-demand-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.on-demand-card:hover {
+    transform: translateY(-8px);
+    border-color: #1d7a76;
+    box-shadow: 0 20px 40px rgba(29, 122, 118, 0.1);
+}
+
+.on-demand-card .card-icon {
+    font-size: 2.5rem;
+    color: #cfa64b;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.on-demand-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.on-demand-card h3 {
+    color: #0b213b;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.on-demand-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+/* Pricing Badge */
+.price-tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.price-tag .amount {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1d7a76;
+}
+
+.price-tag .label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+/* Alternate Card Style */
+.on-demand-card.alternate {
+    background: #0b213b;
+    border-color: #0b213b;
+}
+
+.on-demand-card.alternate h3, 
+.on-demand-card.alternate p {
+    color: #fff;
+}
+
+.on-demand-card.alternate .price-tag {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.on-demand-card.alternate .amount {
+    color: #cfa64b;
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 1024px) {
+    .on-demand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .on-demand-section {
+        padding: 70px 7%;
+    }
+    .on-demand-grid {
+        grid-template-columns: 1fr;
+    }
+    .on-demand-header h2 {
+        font-size: 2.2rem;
+    }
+}
