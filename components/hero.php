@@ -3,36 +3,9 @@
 
 <section class="hero-section">
     <div class="hero-container">
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <span class="hero-badge">Welcome to Bidfactory.co.in</span>
-            <h1>Goverment Procurement & <span>Business Enablement</span> Services</h1>
-            <p>From company registration to high-performance digital marketing, we provide end-to-end services to scale
-                your business with confidence.</p>
-
-            <div class="trust-grid">
-                <div class="stat-box">
-                    <i class="fas fa-smile"></i>
-                    <div>
-                        <span class="stat-value">99.8%</span>
-                        <span class="stat-label">Client Satisfaction</span>
-                    </div>
-                </div>
-                <div class="stat-box">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <span class="stat-value">1200+</span>
-                        <span class="stat-label">Projects Completed</span>
-                    </div>
-                </div>
-                <div class="stat-box live">
-                    <div class="live-dot"></div>
-                    <div>
-                        <span class="stat-value blinking">Live Now</span>
-                        <span class="stat-label">15+ Experts Online</span>
-                    </div>
-                </div>
-            </div>
+        <!-- Hero Brand Image -->
+        <div class="hero-image-wrapper">
+            <img src="assets/frontend/hero.png" alt="BidFactory Hero" class="hero-main-img">
         </div>
 
         <!-- Hero Enquiry Form -->
