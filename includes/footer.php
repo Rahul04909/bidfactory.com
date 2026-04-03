@@ -27,7 +27,7 @@
                 <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
                 <li><a href="#"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
                 <li><a href="#"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                <li><a href="contact.php"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
             </ul>
         </div>
 
