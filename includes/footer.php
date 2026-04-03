@@ -72,7 +72,7 @@
         <p>&copy; <?php echo date("Y"); ?> BidFactory. All rights reserved.</p>
         <div class="footer-links-bottom">
             <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+            <a href="terms.php">Terms & Conditions</a>
             <a href="#">Sitemap</a>
         </div>
     </div>

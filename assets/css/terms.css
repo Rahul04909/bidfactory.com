@@ -1,0 +1,144 @@
+/* Terms & Conditions CSS - Clean & Professional Typography */
+.terms-page {
+    padding: 120px 5% 80px;
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+.terms-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 60px 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 30px;
+}
+
+.terms-header h1 {
+    font-size: 2.8rem;
+    color: #0b213b;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.terms-header .last-updated {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+/* Clauses Styling */
+.terms-content {
+    line-height: 1.8;
+}
+
+.clause-item {
+    margin-bottom: 35px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.clause-icon {
+    font-size: 1.2rem;
+    color: #1d7a76;
+    background: rgba(29, 122, 118, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.clause-text h2 {
+    font-size: 1.3rem;
+    color: #0b213b;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.clause-text p {
+    color: #475569;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.gst-highlight {
+    color: #dc2626;
+    font-weight: 800;
+}
+
+.fy-badge {
+    background: #cfa64b;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin: 0 4px;
+}
+
+/* Page Footer Link */
+.terms-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.btn-contact-support {
+    display: inline-block;
+    color: #1d7a76;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.btn-contact-support:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Logic */
+@media screen and (max-width: 900px) {
+    .terms-page {
+        padding: 100px 5% 60px;
+    }
+    .terms-container {
+        padding: 40px 30px;
+    }
+    .terms-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .clause-item {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .clause-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .clause-text h2 {
+        font-size: 1.15rem;
+    }
+    .clause-text p {
+        font-size: 1rem;
+    }
+}
