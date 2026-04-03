@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="assets/css/why_choose_us.css">
 
 <section class="why-choose-section">
+    <!-- Section Header -->
+    <div class="why-choose-header">
+        <h2>Why Choose BidFactory?</h2>
+    </div>
+
     <!-- Grid with Alternating Backgrounds -->
     <div class="why-choose-grid">
         <!-- Expertise Item -->

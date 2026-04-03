@@ -1,9 +1,23 @@
-/* Why Choose BidFactory CSS - Matches Service Highlights Style */
+/* Why Choose BidFactory CSS - Matches Service Highlights Style (Static) */
 .why-choose-section {
-    padding: 0;
+    padding: 80px 0 0;
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
+}
+
+.why-choose-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 5%;
+}
+
+.why-choose-header h2 {
+    font-size: 2.8rem;
+    color: #0b213b;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
 }
 
 .why-choose-grid {
@@ -19,7 +33,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
     min-height: 350px;
 }
 
@@ -30,14 +43,6 @@
 
 .why-choose-item.teal {
     background-color: #1d7a76;
-}
-
-/* Hover Effect */
-.why-choose-item:hover {
-    filter: brightness(1.1);
-    transform: scale(1.02);
-    z-index: 10;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .why-choose-icon {
@@ -51,16 +56,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: transform 0.4s ease;
-}
-
-.why-choose-item:hover .why-choose-icon {
-    transform: rotateY(180deg);
-    background: rgba(255, 255, 255, 0.2);
 }
 
 .why-choose-content h3 {
-    color: #cfa64b; /* Gold Heading to match Highlights */
+    color: #cfa64b; /* Gold Heading */
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 15px;
@@ -91,5 +90,8 @@
     .why-choose-item {
         min-height: auto;
         padding: 50px 30px;
+    }
+    .why-choose-header h2 {
+        font-size: 2.2rem;
     }
 }
