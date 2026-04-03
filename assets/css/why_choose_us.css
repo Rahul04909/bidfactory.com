@@ -1,125 +1,95 @@
-/* Why Choose BidFactory CSS - Professional Authority Grid */
+/* Why Choose BidFactory CSS - Matches Service Highlights Style */
 .why-choose-section {
-    padding: 100px 5%;
+    padding: 0;
+    width: 100%;
     background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
-.why-choose-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.why-choose-header {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.why-choose-header h2 {
-    font-size: 3rem;
-    color: #0b213b;
-    font-weight: 800;
-    margin-bottom: 20px;
-    letter-spacing: -1.5px;
-}
-
-.why-choose-header .header-accent {
-    color: #1d7a76;
-}
-
-/* 2x2 Feature Grid */
 .why-choose-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 80px;
+    width: 100%;
 }
 
 .why-choose-item {
+    padding: 80px 10%;
+    text-align: center;
     display: flex;
-    gap: 25px;
-    align-items: flex-start;
-    animation: fadeInUp 0.8s ease-out backwards;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    min-height: 350px;
 }
 
-.why-choose-item:nth-child(1) { animation-delay: 0.1s; }
-.why-choose-item:nth-child(2) { animation-delay: 0.2s; }
-.why-choose-item:nth-child(3) { animation-delay: 0.3s; }
-.why-choose-item:nth-child(4) { animation-delay: 0.4s; }
+/* Alternating Brand Colors */
+.why-choose-item.dark-blue {
+    background-color: #0b213b;
+}
+
+.why-choose-item.teal {
+    background-color: #1d7a76;
+}
+
+/* Hover Effect */
+.why-choose-item:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    z-index: 10;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
 
 .why-choose-icon {
-    font-size: 2rem;
-    color: #cfa64b;
-    background: rgba(207, 166, 75, 0.08);
-    width: 70px;
-    height: 70px;
+    font-size: 2.5rem;
+    color: #cfa64b; /* Gold Icon */
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
 }
 
 .why-choose-item:hover .why-choose-icon {
-    background: #1d7a76;
-    color: #fff;
     transform: rotateY(180deg);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .why-choose-content h3 {
-    color: #0b213b;
-    font-size: 1.4rem;
-    font-weight: 700;
+    color: #cfa64b; /* Gold Heading to match Highlights */
+    font-size: 1.6rem;
+    font-weight: 800;
     margin-bottom: 15px;
-    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    line-height: 1.2;
 }
 
 .why-choose-content p {
-    color: #64748b;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin: 0;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 /* Responsive Grid */
 @media screen and (max-width: 991px) {
-    .why-choose-grid {
-        gap: 50px;
+    .why-choose-item {
+        padding: 60px 5%;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .why-choose-section {
-        padding: 80px 7%;
-    }
-    .why-choose-header h2 {
-        font-size: 2.4rem;
-    }
     .why-choose-grid {
         grid-template-columns: 1fr;
     }
     .why-choose-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-    .why-choose-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 1.6rem;
-        border-radius: 16px;
+        min-height: auto;
+        padding: 50px 30px;
     }
 }
