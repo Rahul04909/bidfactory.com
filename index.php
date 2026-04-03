@@ -6,4 +6,5 @@
 <?php include 'components/marketing_services.php'; ?>
 <?php include 'components/subscription_services.php'; ?>
 <?php include 'components/on_demand_services.php'; ?>
+<?php include 'components/why_choose_us.php'; ?>
 <?php include 'includes/footer.php'; ?>
