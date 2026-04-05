@@ -1,10 +1,8 @@
 <?php
-namespace PHPAuth;
-
 /**
- * PHPAuth Auth Class - Local Patched Version (PHP 8.x Optimized)
+ * BidFactory Auth Class - Local Patched Version (PHP 8.x Optimized)
  */
-class Auth
+class BidAuth
 {
     protected $dbh;
     public $config;
@@ -12,22 +10,25 @@ class Auth
 
     /**
      * Auth::__construct()
+     * 
+     * @param \PDO $dbh
+     * @param BidConfig $config
+     * @param string $lang_name
      */
-    public function __construct(\PDO $dbh, $config, $lang = "en_GB")
+    public function __construct(\PDO $dbh, $config, $lang_name = "en_GB")
     {
         $this->dbh = $dbh;
         $this->config = $config;
 
-        if (file_exists(__DIR__ . "/languages/{$lang}.php")) {
-            include(__DIR__ . "/languages/{$lang}.php");
-            $this->lang = $lang_dict;
+        // Load language file
+        $lang_path = __DIR__ . "/../../vendor/phpauth/phpauth/languages/{$lang_name}.php";
+        if (file_exists($lang_path)) {
+            require $lang_path;
+            // The included file defines a variable named $lang
+            $this->lang = $lang; 
         } else {
-            // Fallback to vendor languages if local not found
-            $vendorLang = __DIR__ . "/../../vendor/phpauth/phpauth/languages/{$lang}.php";
-            if (file_exists($vendorLang)) {
-                include($vendorLang);
-                $this->lang = $lang_dict;
-            }
+            // Fallback empty array to avoid fatal errors
+            $this->lang = array();
         }
 
         if (isset($this->config->site_timezone)) {

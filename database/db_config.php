@@ -11,9 +11,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/phpauth/Config.php';
 require_once __DIR__ . '/phpauth/Auth.php';
 
-use PHPAuth\Config as PHPAuthConfig;
-use PHPAuth\Auth as PHPAuthMain;
-
 // Database connection parameters
 $host = 'localhost';
 $dbname = 'jhdindus_bidfactory';
@@ -26,11 +23,11 @@ try {
     $dbh->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
 
-    // Initialize PHPAuth Config (using the specific phpauth_config table)
-    $config = new PHPAuthConfig($dbh, "phpauth_config");
+    // Initialize BidFactory Config (using the specific phpauth_config table)
+    $config = new BidConfig($dbh, "phpauth_config");
 
-    // Initialize PHPAuth Main class
-    $auth = new PHPAuthMain($dbh, $config, "en_GB");
+    // Initialize BidFactory Auth class
+    $auth = new BidAuth($dbh, $config, "en_GB");
 
 } catch (\PDOException $e) {
     die("Database Connection Error: " . $e->getMessage());

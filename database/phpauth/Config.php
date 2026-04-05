@@ -1,10 +1,8 @@
 <?php
-namespace PHPAuth;
-
 /**
- * PHPAuth Config Class - Local Patched Version (PHP 8.x Optimized)
+ * BidFactory Config Class - Local Patched Version (PHP 8.x Optimized)
  */
-class Config
+class BidConfig
 {
     private $dbh;
     private $config;
