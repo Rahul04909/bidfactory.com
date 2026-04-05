@@ -389,13 +389,22 @@ $active_page = $active_pageInfo['active_page'] ?? null;
     <div class="wrapper">
         <!-- Wrapper started -->
 
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-            </ul>
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light justify-content-center">
+            <style>
+                @keyframes blinker {
+                    50% { opacity: 0; }
+                }
+                .blinking-text {
+                    animation: blinker 1s linear infinite;
+                    font-weight: bold;
+                    color: var(--primary-green);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            </style>
+            <div class="blinking-text">
+                Welcome to BidFactory Admin Dashboard
+            </div>
         </nav>
 
         <div class="main-header" style="padding: 0px 10px; background-color: #f4f6f9; border-bottom: none !important;">
