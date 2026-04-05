@@ -6,7 +6,8 @@
         <!-- Column 1: About & Socials -->
         <div class="footer-column footer-about">
             <a href="#" class="logo" style="display: block; margin-bottom: 20px;">
-                <img src="assets/logo.png" alt="BidFactory Logo" style="height: 45px; width: auto;">
+                <img src="assets/logo.png" alt="BidFactory Logo"
+                    style="height: 45px; width: auto; background-color: white; border-radius: 50%;">
             </a>
             <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We
                 turn your vision into sustainable growth.</p>
