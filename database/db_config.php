@@ -7,6 +7,10 @@
 // Autoload PHPAuth and other vendor packages
 require_once __DIR__ . '/../vendor/autoload.php';
 
+// Manual require for PHPAuth classes (Composer autoloader fix)
+require_once __DIR__ . '/../vendor/phpauth/phpauth/auth.class.php';
+require_once __DIR__ . '/../vendor/phpauth/phpauth/config.class.php';
+
 use PHPAuth\Config as PHPAuthConfig;
 use PHPAuth\Auth as PHPAuthMain;
 
