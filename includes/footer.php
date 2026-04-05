@@ -5,9 +5,8 @@
     <div class="footer-container">
         <!-- Column 1: About & Socials -->
         <div class="footer-column footer-about">
-            <a href="#" class="logo"
-                style="font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; text-decoration: none; color: #fff; display: block; margin-bottom: 20px;">
-                Bid<span style="color: #006aff;">Factory</span>
+            <a href="#" class="logo" style="display: block; margin-bottom: 20px;">
+                <img src="assets/logo.png" alt="BidFactory Logo" style="height: 45px; width: auto;">
             </a>
             <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We
                 turn your vision into sustainable growth.</p>

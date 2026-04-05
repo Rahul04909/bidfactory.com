@@ -4,8 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "826f515f5ef16946d3e3ee3e3205b25e",
+    "content-hash": "0344ca0d1621c89234837747f65876bd",
     "packages": [
+        {
+            "name": "phpauth/phpauth",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPAuth/PHPAuth.git",
+                "reference": "f518ec398650779d06a9521117093773e569e441"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPAuth/PHPAuth/zipball/f518ec398650779d06a9521117093773e569e441",
+                "reference": "f518ec398650779d06a9521117093773e569e441",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/PHPAuth/PHPAuth/issues",
+                "source": "https://github.com/PHPAuth/PHPAuth/tree/v1.0.0"
+            },
+            "time": "2015-10-06T05:37:45+00:00"
+        },
         {
             "name": "phpmailer/phpmailer",
             "version": "v7.0.2",
