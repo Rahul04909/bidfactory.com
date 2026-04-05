@@ -8,8 +8,19 @@ if (!$auth->isLogged()) {
 }
 
 // Get Logged-in User Data
-$uid = $auth->getSessionUID($_COOKIE[$config->cookie_name]);
-$userData = $auth->getUser($uid);
+$userData = null;
+if (isset($_COOKIE[$config->cookie_name])) {
+    $uid = $auth->getSessionUID($_COOKIE[$config->cookie_name]);
+    if ($uid) {
+        $userData = $auth->getUser($uid);
+    }
+}
+
+// Redirect if session is invalid despite passing isLogged() check
+if (!$userData) {
+    header('Location: login.php');
+    exit();
+}
 
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 

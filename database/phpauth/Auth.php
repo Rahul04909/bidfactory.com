@@ -251,11 +251,13 @@ class BidAuth
         $query = $this->dbh->prepare("SELECT uid FROM {$this->config->table_sessions} WHERE hash = ?");
         $query->execute(array($hash));
 
-        if ($query->rowCount() == 0) {
+        $row = $query->fetch(\PDO::FETCH_ASSOC);
+
+        if (!$row) {
             return false;
         }
 
-        return $query->fetch(\PDO::FETCH_ASSOC)['uid'];
+        return $row['uid'];
     }
 
     public function logout($hash)
@@ -279,11 +281,13 @@ class BidAuth
         $query = $this->dbh->prepare("SELECT email, password, isactive FROM {$this->config->table_users} WHERE id = ?");
         $query->execute(array($uid));
 
-        if ($query->rowCount() == 0) {
+        $row = $query->fetch(\PDO::FETCH_ASSOC);
+
+        if (!$row) {
             return false;
         }
 
-        return $query->fetch(\PDO::FETCH_ASSOC);
+        return $row;
     }
 
     public function getUser($uid)
@@ -291,11 +295,13 @@ class BidAuth
         $query = $this->dbh->prepare("SELECT * FROM {$this->config->table_users} WHERE id = ?");
         $query->execute(array($uid));
 
-        if ($query->rowCount() == 0) {
+        $row = $query->fetch(\PDO::FETCH_ASSOC);
+
+        if (!$row) {
             return false;
         }
 
-        return $query->fetch(\PDO::FETCH_ASSOC);
+        return $row;
     }
 
     private function addUser($email, $password, $params = array(), &$sendmail = null)
@@ -432,5 +438,38 @@ class BidAuth
     private function checkCaptcha($captcha)
     {
         return true;
+    }
+
+    /**
+     * Returns is user logged in
+     * @return boolean
+     */
+    public function isLogged() {
+        return (isset($_COOKIE[$this->config->cookie_name]) && $this->checkSession($_COOKIE[$this->config->cookie_name]));
+    }
+
+    /**
+     * Logs a user out
+     * @param string $hash
+     * @return boolean
+     */
+    public function logout($hash)
+    {
+        if (strlen($hash) != 40) {
+            return false;
+        }
+        return $this->deleteSession($hash);
+    }
+
+    /**
+     * Deletes a session
+     * @param string $hash
+     * @return boolean
+     */
+    public function deleteSession($hash)
+    {
+        $query = $this->dbh->prepare("DELETE FROM {$this->config->table_sessions} WHERE hash = ?");
+        $query->execute(array($hash));
+        return $query->rowCount() == 1;
     }
 }
