@@ -1,16 +1,14 @@
-<!-- Professional Footer Component for BidFactory -->
+<!-- Professional Footer Redesign - High Authority Three-Column Layout -->
 <link rel="stylesheet" href="assets/css/footer.css">
 
 <footer class="footer">
     <div class="footer-container">
-        <!-- Column 1: About & Socials -->
+        <!-- Column 1: Brand & Description -->
         <div class="footer-column footer-about">
-            <a href="#" class="logo" style="display: block; margin-bottom: 20px;">
-                <img src="assets/logo.png" alt="BidFactory Logo"
-                    style="height: 45px; width: auto; background-color: white; border-radius: 30%;">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="BidFactory Logo">
             </a>
-            <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We
-                turn your vision into sustainable growth.</p>
+            <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We turn your vision into sustainable growth.</p>
             <div class="social-links">
                 <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -31,8 +29,7 @@
             </ul>
         </div>
 
-
-        <!-- Column 4: Contact Us -->
+        <!-- Column 3: Contact Us -->
         <div class="footer-column">
             <h3>Contact Us</h3>
             <ul class="contact-info">
