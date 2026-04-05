@@ -22,8 +22,8 @@ try {
     $dbh->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
 
-    // Initialize PHPAuth Config
-    $config = new PHPAuthConfig($dbh);
+    // Initialize PHPAuth Config (using the specific phpauth_config table)
+    $config = new PHPAuthConfig($dbh, "phpauth_config");
 
     // Initialize PHPAuth Main class
     $auth = new PHPAuthMain($dbh, $config, "en_GB");

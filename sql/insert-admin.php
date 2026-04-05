@@ -32,8 +32,8 @@ try {
         die("<p style='color: orange;'>Admin user already exists in the database.</p>");
     }
 
-    // Register user using PHPAuth (auto-activates because email suppression is ON in config)
-    $register = $auth->register($email, $password, $repeat_password, $params);
+    // Register user using PHPAuth (explicitly disable email to prevent 500 err from missing PHPMailer Autoload)
+    $register = $auth->register($email, $password, $repeat_password, $params, null, false);
 
     if (!$register['error']) {
         echo "<p style='color: green;'>Success! Admin user created successfully.</p>";
