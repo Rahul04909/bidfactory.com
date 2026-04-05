@@ -1,49 +1,67 @@
 <!-- Hero Section Component -->
 <link rel="stylesheet" href="assets/css/hero.css">
 
-<section class="hero-section">
-    <div class="hero-container">
-        <!-- Hero Brand Image -->
-        <div class="hero-image-wrapper">
-            <img src="assets/frontend/hero.png" alt="BidFactory Hero" class="hero-main-img">
+<section class="hero-slider-section">
+    <div class="slider-container" id="heroSlider">
+        <div class="slider-wrapper">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <span class="slide-badge">Exclusive Offer</span>
+                        <h1>INVEST ₹10,000/MONTH <br><span>and get ₹1 CRORE RETURNS*</span></h1>
+                        <p>Secure your family's future with our expert-guided investment plans and in-built life cover.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-plans">View plans <i class="fas fa-chevron-right"></i></a>
+                            <span class="terms-text">*Standard T&C Applied</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/frontend/hero_slide_1.png" alt="Investment Expert">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide" style="background: linear-gradient(135deg, #4c1d95 0%, #8b5cf6 100%);">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <span class="slide-badge">Business Growth</span>
+                        <h1>SCALE YOUR BUSINESS <br><span>to the NEXT LEVEL</span></h1>
+                        <p>Get expert consultation on business registration, taxes, and digital scaling strategies.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-plans">Get Started <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/frontend/hero_slide_2.png" alt="Business Growth">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide" style="background: linear-gradient(135deg, #064e3b 0%, #10b981 100%);">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <span class="slide-badge">Digital Transformation</span>
+                        <h1>DOMINATE THE <br><span>DIGITAL LANDSCAPE</span></h1>
+                        <p>Full-stack development, ERP solutions, and advanced SEO to make your brand unbeatable.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-plans">Explore Now <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/frontend/hero_slide_3.png" alt="Digital Tech">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Hero Enquiry Form -->
-        <div class="hero-form-card">
-            <h2>Get a Free Consultation</h2>
-            <p>Fill the form below and our experts will reach out to you within 24 hours.</p>
-
-            <form id="heroEnquiryForm">
-                <div class="form-group">
-                    <label for="heroName">Your Full Name</label>
-                    <input type="text" id="heroName" class="form-control" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="heroMobile">Mobile Number</label>
-                    <input type="tel" id="heroMobile" class="form-control" placeholder="e.g. 9876543210" maxlength="10"
-                        required>
-                </div>
-
-                <div class="form-group">
-                    <label for="heroEmail">Email Address</label>
-                    <input type="email" id="heroEmail" class="form-control" placeholder="name@example.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="heroService">Select Service</label>
-                    <select id="heroService" class="form-control" required>
-                        <option value="">-- Choose a Service --</option>
-                        <option value="Business Registration">Business Registration</option>
-                        <option value="Digital Marketing">Digital Marketing</option>
-                        <option value="Website & ERP Development">Website & ERP Development</option>
-                        <option value="Branding & Local SEO">Branding & Local SEO</option>
-                        <option value="Google Profile Services">Google Profile Services</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="btn-hero">Talk to our Experts Now</button>
-            </form>
+        <!-- Indicators -->
+        <div class="slider-indicators">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
         </div>
     </div>
 </section>
