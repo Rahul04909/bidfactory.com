@@ -156,7 +156,7 @@ class Auth
         $return['error'] = false;
         $return['message'] = $this->lang["login_success"];
         $return['hash'] = $sessiondata['hash'];
-        $return['expire'] = $sessiondata['expiredate'];
+        $return['expire'] = $sessiondata['expire']; // Returns timestamp as integer for setcookie()
         $return['cookie_name'] = $this->config->cookie_name;
 
         return $return;

@@ -47,6 +47,17 @@ class Config
     }
 
     /**
+     * Config::__isset()
+     * 
+     * @param mixed $setting
+     * @return bool
+     */
+    public function __isset($setting)
+    {
+        return isset($this->config[$setting]);
+    }
+
+    /**
      * Config::__set()
      * 
      * @param mixed $setting
