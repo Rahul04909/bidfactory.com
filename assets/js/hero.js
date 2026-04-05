@@ -85,27 +85,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mobile Touch Support
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
 
     wrapper.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
         stopAutoSlide(); // Pause on touch
     }, {passive: true});
 
+    wrapper.addEventListener('touchmove', (e) => {
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+        const diffX = Math.abs(touchStartX - touchX);
+        const diffY = Math.abs(touchStartY - touchY);
+
+        if (diffX > diffY) {
+            // Horizontal movement: prevent vertical scrolling
+            if (e.cancelable) e.preventDefault();
+        }
+    }, {passive: false});
+
     wrapper.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
+        touchEndX = e.changedTouches[0].clientX;
         handleSwipe();
         startAutoSlide(); // Resume after touch
     }, {passive: true});
 
     function handleSwipe() {
         const swipeDistance = touchStartX - touchEndX;
-        if (swipeDistance > 50) {
-            // Swipe Left -> Next Slide
-            goToSlide(currentIndex + 1);
-        } else if (swipeDistance < -50) {
-            // Swipe Right -> Prev Slide
-            goToSlide(currentIndex - 1);
+        if (Math.abs(swipeDistance) > 50) {
+            if (swipeDistance > 0) {
+                // Swipe Left -> Next Slide
+                goToSlide(currentIndex + 1);
+            } else {
+                // Swipe Right -> Prev Slide
+                goToSlide(currentIndex - 1);
+            }
         }
     }
 
