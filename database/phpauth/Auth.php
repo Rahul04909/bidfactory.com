@@ -384,6 +384,91 @@ class BidAuth
         return $key;
     }
 
+    /**
+     * Update user details
+     * @param int $uid
+     * @param array $params
+     * @return array
+     */
+    public function updateUser($uid, $params)
+    {
+        $return['error'] = true;
+
+        if (empty($params)) {
+             $return['message'] = $this->lang["system_error"] . " #11";
+             return $return;
+        }
+
+        $fields = [];
+        $values = [];
+        foreach ($params as $key => $val) {
+            $fields[] = "`$key` = ?";
+            $values[] = $val;
+        }
+        $values[] = $uid;
+
+        $sql = "UPDATE {$this->config->table_users} SET " . implode(', ', $fields) . " WHERE id = ?";
+        $query = $this->dbh->prepare($sql);
+
+        if (!$query->execute($values)) {
+            $return['message'] = $this->lang["system_error"] . " #12";
+            return $return;
+        }
+
+        $return['error'] = false;
+        $return['message'] = "Profile updated successfully";
+
+        return $return;
+    }
+
+    /**
+     * Change user password
+     * @param int $uid
+     * @param string $currpass
+     * @param string $newpass
+     * @param string $repeatnewpass
+     * @return array
+     */
+    public function changePassword($uid, $currpass, $newpass, $repeatnewpass)
+    {
+        $return['error'] = true;
+
+        $user = $this->getBaseUser($uid);
+        if (!$user) {
+            $return['message'] = $this->lang["system_error"] . " #13";
+            return $return;
+        }
+
+        if (!password_verify($currpass, $user['password'])) {
+            $return['message'] = $this->lang["password_incorrect"];
+            return $return;
+        }
+
+        if ($newpass !== $repeatnewpass) {
+            $return['message'] = $this->lang["password_nomatch"];
+            return $return;
+        }
+
+        $validatePassword = $this->validatePassword($newpass);
+        if ($validatePassword['error'] == 1) {
+            $return['message'] = $validatePassword['message'];
+            return $return;
+        }
+
+        $newhash = $this->getHash($newpass);
+        $query = $this->dbh->prepare("UPDATE {$this->config->table_users} SET password = ? WHERE id = ?");
+
+        if (!$query->execute(array($newhash, $uid))) {
+            $return['message'] = $this->lang["system_error"] . " #14";
+            return $return;
+        }
+
+        $return['error'] = false;
+        $return['message'] = $this->lang["password_changed"];
+
+        return $return;
+    }
+
     private function getHash($password)
     {
         return password_hash($password, PASSWORD_BCRYPT, ['cost' => $this->config->bcrypt_cost]);

@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!$login['error']) {
         // Set secure auth cookie and redirect
-        setcookie($config->cookie_name, $login['hash'], $login['expire'], $config->cookie_path, $config->cookie_domain, (bool)$config->cookie_secure, (bool)$config->cookie_http);
+        setcookie($config->cookie_name, $login['hash'], $login['expire'], $config->cookie_path, $config->cookie_domain, (bool) $config->cookie_secure, (bool) $config->cookie_http);
         header('Location: index.php');
         exit();
     } else {
@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --primary: #0b213b;
@@ -216,10 +217,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             border-radius: 50%;
         }
 
-        .shape-1 { width: 400px; height: 400px; top: -100px; right: -100px; }
-        .shape-2 { width: 300px; height: 300px; bottom: -50px; left: -50px; }
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            right: -100px;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            left: -50px;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="bg-shapes">
@@ -231,7 +244,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="../" class="logo">
             <img src="../assets/logo.png" alt="BidFactory Logo">
         </a>
-        
+
         <h1>Admin Control Panel</h1>
         <p class="subtitle">Enter your credentials to access the dashboard</p>
 
@@ -246,7 +259,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="email">Work Email</label>
                 <div class="input-wrapper">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="admin@bidfactory.co.in" required autofocus>
+                    <input type="email" id="email" name="email" class="form-control"
+                        placeholder="admin@bidfactory.co.in" required autofocus>
                 </div>
             </div>
 
@@ -254,7 +268,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="password">Password</label>
                 <div class="input-wrapper">
                     <i class="fas fa-lock"></i>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="••••••••" required>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="••••••••"
+                        required>
                 </div>
             </div>
 
@@ -271,4 +286,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
 </body>
+
 </html>
