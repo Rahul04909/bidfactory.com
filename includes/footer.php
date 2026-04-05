@@ -31,17 +31,6 @@
             </ul>
         </div>
 
-        <!-- Column 3: Services -->
-        <div class="footer-column">
-            <h3>Our Services</h3>
-            <ul>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> Business Registration</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> Digital Marketing</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> Website & ERP</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> Branding & Local SEO</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> Google Services</a></li>
-            </ul>
-        </div>
 
         <!-- Column 4: Contact Us -->
         <div class="footer-column">

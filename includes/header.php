@@ -41,18 +41,6 @@
 
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                <li class="nav-item dropdown-toggle">
-                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"
-                            style="font-size: 0.7rem; margin-left: 5px;"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="#" class="dropdown-item">Business Registration</a></li>
-                        <li><a href="#" class="dropdown-item">Digital Marketing</a></li>
-                        <li><a href="#" class="dropdown-item">Website & ERP Development</a></li>
-                        <li><a href="#" class="dropdown-item">Branding & Local SEO</a></li>
-                        <li><a href="#" class="dropdown-item">Portfolio / Case Studies</a></li>
-                        <li><a href="#" class="dropdown-item">Google Profile Services</a></li>
-                    </ul>
-                </li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
                 <!-- Mobile CTAs inside the drawer -->
