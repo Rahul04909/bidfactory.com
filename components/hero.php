@@ -1,5 +1,5 @@
 <!-- Hero Section Component -->
-<link rel="stylesheet" href="assets/css/hero.css">
+<link rel="stylesheet" href="assets/css/hero.css?v=<?php echo time(); ?>">
 
 <section class="hero-slider-section">
     <div class="slider-container" id="heroSlider">
@@ -69,4 +69,4 @@
 </section>
 
 <!-- Hero Section JS -->
-<script src="assets/js/hero.js"></script>
+<script src="assets/js/hero.js?v=<?php echo time(); ?>"></script>
