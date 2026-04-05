@@ -447,29 +447,4 @@ class BidAuth
     public function isLogged() {
         return (isset($_COOKIE[$this->config->cookie_name]) && $this->checkSession($_COOKIE[$this->config->cookie_name]));
     }
-
-    /**
-     * Logs a user out
-     * @param string $hash
-     * @return boolean
-     */
-    public function logout($hash)
-    {
-        if (strlen($hash) != 40) {
-            return false;
-        }
-        return $this->deleteSession($hash);
-    }
-
-    /**
-     * Deletes a session
-     * @param string $hash
-     * @return boolean
-     */
-    public function deleteSession($hash)
-    {
-        $query = $this->dbh->prepare("DELETE FROM {$this->config->table_sessions} WHERE hash = ?");
-        $query->execute(array($hash));
-        return $query->rowCount() == 1;
-    }
 }
