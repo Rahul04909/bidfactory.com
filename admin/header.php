@@ -1,4 +1,16 @@
 <?php
+require_once __DIR__ . '/../database/db_config.php';
+
+// Auth Guard
+if (!$auth->isLogged()) {
+    header('Location: login.php');
+    exit();
+}
+
+// Get Logged-in User Data
+$uid = $auth->getSessionUID($_COOKIE[$config->cookie_name]);
+$userData = $auth->getUser($uid);
+
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
 $menuItems = [
@@ -95,7 +107,7 @@ $active_page = $active_pageInfo['active_page'] ?? null;
             float: none !important;
             line-height: .8;
             margin: 0 !important;
-            max-height: 40px;
+            max-height: 33px;
             width: auto;
         }
 
@@ -423,16 +435,16 @@ $active_page = $active_pageInfo['active_page'] ?? null;
 
         <aside class="main-sidebar sidebar-light-primary elevation-4">
             <a href="./" class="brand-link">
-                <img src="./src/images/prayag-computer-logo.png" alt="Logo" class="brand-image img-circle bg-white">
+                <img src="../assets/logo.png" alt="Logo" class="brand-image">
             </a>
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3">
                     <a href="./profile.php" class="d-flex">
                         <div class="image">
-                            <img src="./src/images/user-avtar.png" class="img-circle elevation-2 bg-white" alt="User Image">
+                            <img src="./src/images/<?= htmlspecialchars($userData['profile_image'] ?? 'user-avtar.png') ?>" class="img-circle elevation-2 bg-white" alt="User Image">
                         </div>
                         <div class="info">
-                            Rahul
+                            <?= htmlspecialchars($userData['name'] ?? 'Admin') ?>
                         </div>
                     </a>
                 </div>
