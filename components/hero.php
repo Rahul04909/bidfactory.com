@@ -11,10 +11,6 @@
                         <span class="slide-badge">Exclusive Offer</span>
                         <h1>INVEST ₹10,000/MONTH <br><span>and get ₹1 CRORE RETURNS*</span></h1>
                         <p>Secure your family's future with our expert-guided investment plans and in-built life cover.</p>
-                        <div class="hero-actions">
-                            <a href="#" class="btn-plans">View plans <i class="fas fa-chevron-right"></i></a>
-                            <span class="terms-text">*Standard T&C Applied</span>
-                        </div>
                     </div>
                     <div class="hero-image">
                         <img src="assets/frontend/hero_slide_1.png" alt="Investment Expert">
@@ -55,6 +51,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="slider-nav">
+            <button class="nav-btn prev-btn" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
         </div>
 
         <!-- Indicators -->

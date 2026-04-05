@@ -67,6 +67,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Navigation Buttons
+    const prevBtn = document.getElementById('prevSlide');
+    const nextBtn = document.getElementById('nextSlide');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            goToSlide(currentIndex - 1);
+            resetAutoSlide();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            goToSlide(currentIndex + 1);
+            resetAutoSlide();
+        });
+    }
+
     // Mobile Touch Support
     let touchStartX = 0;
     let touchEndX = 0;

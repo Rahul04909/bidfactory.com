@@ -148,6 +148,55 @@
     gap: 12px;
 }
 
+/* Slider Navigation Buttons */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* Allows clicks through the container */
+    z-index: 10;
+}
+
+.nav-btn {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto; /* Re-enabling for buttons */
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.nav-btn i {
+    font-size: 1.2rem;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hide nav on mobile to rely on swipe/dots */
+@media (max-width: 768px) {
+    .slider-nav { display: none; }
+}
+
 .dot {
     width: 14px;
     height: 14px;
