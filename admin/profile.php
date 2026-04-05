@@ -95,12 +95,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="card-header p-2 bg-white border-bottom">
                 <ul class="nav nav-pills custom-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#settings" data-toggle="tab">
+                        <a class="nav-link active" href="#settings" data-bs-toggle="tab" data-bs-target="#settings">
                             <i class="fas fa-user-edit mr-2"></i>Account Details
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#security" data-toggle="tab">
+                        <a class="nav-link" href="#security" data-bs-toggle="tab" data-bs-target="#security">
                             <i class="fas fa-shield-alt mr-2"></i>Security & Password
                         </a>
                     </li>
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="card-body p-4">
                 <div class="tab-content">
                     <!-- Profile Info Tab -->
-                    <div class="active tab-pane fade show" id="settings">
+                    <div class="tab-pane fade show active" id="settings">
                         <form method="POST" enctype="multipart/form-data" class="form-horizontal">
                             <input type="hidden" name="update_profile" value="1">
                             <div class="row">
