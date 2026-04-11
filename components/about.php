@@ -3,20 +3,20 @@
 
 <section class="about-section">
     <!-- Full Width Header Box -->
-    <div class="about-header-box">
+    <div class="about-header-box" data-aos="fade-down">
         <span class="about-overline">Who We Are</span>
         <h2>Empowering India's <span>Business Ecosystem</span></h2>
     </div>
 
     <div class="about-container">
         <!-- Visual Column -->
-        <div class="about-visual">
+        <div class="about-visual" data-aos="fade-right" data-aos-delay="100">
             <img src="../assets/frontend/front-about.jpeg" alt="BidFactory Consultants in a Strategic Meeting"
                 class="about-image">
         </div>
 
         <!-- Content Column -->
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left" data-aos-delay="200">
 
             <p>At <strong>BidFactory</strong>, we are more than just consultants; we are your strategic catalysts for
                 growth. Based in the heart of Delhi NCR, we specialize in bridging the gap between ambitious MSMEs,

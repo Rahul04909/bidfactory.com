@@ -2,20 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #ff6600;
-    --text-color: #333333;
+    --primary-color: #0b213b; /* Deep Navy */
+    --secondary-color: #cfa64b; /* Gold/Yellow */
+    --accent-color: #1d7a76; /* Teal */
+    --text-color: #334155;
     --bg-color: #ffffff;
     --header-height: 80px;
-    --transition: all 0.3s ease;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow: 0 10px 30px rgba(11, 33, 59, 0.08); /* Premium shadow */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 
 .header ul, 
