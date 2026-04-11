@@ -1,97 +1,146 @@
-/* Why Choose BidFactory CSS - Matches Service Highlights Style (Static) */
+/* Why Choose Us - Narrative Styling */
 .why-choose-section {
-    padding: 80px 0 0;
-    width: 100%;
-    background-color: #ffffff;
-    overflow: hidden;
+    padding: 100px 0;
+    background-color: #f8fafc;
+    text-align: center;
 }
 
 .why-choose-header {
-    text-align: center;
-    margin-bottom: 60px;
-    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.why-choose-header .sub-title {
+    display: block;
+    color: #1d7a76;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 .why-choose-header h2 {
     font-size: 2.8rem;
     color: #0b213b;
     font-weight: 800;
-    margin-bottom: 15px;
     letter-spacing: -1px;
 }
 
-.why-choose-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-}
-
-.why-choose-item {
-    padding: 80px 10%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
-}
-
-/* Alternating Brand Colors */
-.why-choose-item.dark-blue {
-    background-color: #0b213b;
-}
-
-.why-choose-item.teal {
-    background-color: #1d7a76;
-}
-
-.why-choose-icon {
-    font-size: 2.5rem;
-    color: #cfa64b; /* Gold Icon */
-    margin-bottom: 25px;
-    background: rgba(255, 255, 255, 0.1);
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.why-choose-content h3 {
-    color: #cfa64b; /* Gold Heading */
-    font-size: 1.6rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    line-height: 1.2;
-}
-
-.why-choose-content p {
-    color: #ffffff;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 500;
+.why-choose-narrative {
+    max-width: 900px;
     margin: 0 auto;
-    max-width: 400px;
+    padding: 0 20px;
 }
 
-/* Responsive Grid */
-@media screen and (max-width: 991px) {
-    .why-choose-item {
-        padding: 60px 5%;
-    }
+.why-choose-narrative p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 25px;
 }
 
-@media screen and (max-width: 767px) {
-    .why-choose-grid {
-        grid-template-columns: 1fr;
-    }
-    .why-choose-item {
-        min-height: auto;
-        padding: 50px 30px;
-    }
-    .why-choose-header h2 {
-        font-size: 2.2rem;
-    }
+.why-choose-narrative p strong {
+    color: #0b213b;
+    font-weight: 700;
+}
+
+/* Let's Get Started Section */
+.started-section {
+    position: relative;
+    padding: 120px 0;
+    background: url('../frontend/lets-get-started.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.started-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(11, 33, 59, 0.7), rgba(11, 33, 59, 0.85));
+    z-index: 1;
+}
+
+.started-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.started-content h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.started-content p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.started-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-started {
+    background-color: #cfa64b;
+    color: #fff;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-started i {
+    transition: transform 0.3s ease;
+}
+
+.btn-started:hover {
+    background-color: #fff;
+    color: #0b213b;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.btn-started:hover i {
+    transform: translateX(5px);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .why-choose-header h2 { font-size: 2.2rem; }
+    .why-choose-narrative p { font-size: 1.1rem; }
+    
+    .started-section { padding: 80px 0; min-height: 400px; }
+    .started-content h2 { font-size: 2.5rem; }
+    .started-content p { font-size: 1.1rem; }
+    .btn-started { padding: 15px 30px; font-size: 1.1rem; }
 }
