@@ -8,12 +8,15 @@
             <div class="hero-slide active" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
                 <div class="hero-container">
                     <div class="hero-content">
-                        <span class="slide-badge">Exclusive Offer</span>
-                        <h1>INVEST ₹10,000/MONTH <br><span>and get ₹1 CRORE RETURNS*</span></h1>
-                        <p>Secure your family's future with our expert-guided investment plans and in-built life cover.</p>
+                        <span class="slide-badge">The Growth Partner</span>
+                        <h1>Aapka Business, <br><span>Hamari Zid.</span></h1>
+                        <p>Navigating GeM and CPP portals shouldn't be a hurdle. We handle the paperwork, so you can focus on your craft.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-plans">Let’s Grow Together <i class="fas fa-chevron-right"></i></a>
+                        </div>
                     </div>
                     <div class="hero-image">
-                        <img src="assets/frontend/hero_slide_1.png" alt="Investment Expert">
+                        <img src="assets/frontend/hero_slide_1.png" alt="Growth Partner">
                     </div>
                 </div>
             </div>
@@ -22,15 +25,15 @@
             <div class="hero-slide" style="background: linear-gradient(135deg, #4c1d95 0%, #8b5cf6 100%);">
                 <div class="hero-container">
                     <div class="hero-content">
-                        <span class="slide-badge">Business Growth</span>
-                        <h1>SCALE YOUR BUSINESS <br><span>to the NEXT LEVEL</span></h1>
-                        <p>Get expert consultation on business registration, taxes, and digital scaling strategies.</p>
+                        <span class="slide-badge">Simplifying the Maze</span>
+                        <h1>Government Tenders, <br><span>Simplified.</span></h1>
+                        <p>Don’t let complex documentation stop you. From MSME registration to final submission, we are with you at every step.</p>
                         <div class="hero-actions">
-                            <a href="#" class="btn-plans">Get Started <i class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="btn-plans">See How We Help <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="assets/frontend/hero_slide_2.png" alt="Business Growth">
+                        <img src="assets/frontend/hero_slide_2.png" alt="Simplifying Tenders">
                     </div>
                 </div>
             </div>
@@ -39,15 +42,49 @@
             <div class="hero-slide" style="background: linear-gradient(135deg, #064e3b 0%, #10b981 100%);">
                 <div class="hero-container">
                     <div class="hero-content">
-                        <span class="slide-badge">Digital Transformation</span>
-                        <h1>DOMINATE THE <br><span>DIGITAL LANDSCAPE</span></h1>
-                        <p>Full-stack development, ERP solutions, and advanced SEO to make your brand unbeatable.</p>
+                        <span class="slide-badge">The MSME Focus</span>
+                        <h1>Empowering the <br><span>Backbone of India.</span></h1>
+                        <p>Helping local MSMEs compete for—and win—national-level contracts. Your size shouldn't limit your reach.</p>
                         <div class="hero-actions">
-                            <a href="#" class="btn-plans">Explore Now <i class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="btn-plans">Claim Your MSME Benefits <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="assets/frontend/hero_slide_3.png" alt="Digital Tech">
+                        <img src="assets/frontend/hero_slide_3.png" alt="MSME Focus">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide" style="background: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%);">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <span class="slide-badge">Trust & Reliability</span>
+                        <h1>Bharosa <br><span>Jeet Ka.</span></h1>
+                        <p>With 100% compliance and rigorous auditing, we ensure your bid is never rejected due to a technical error.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-plans">Book a Consultation <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/frontend/hero_slide_4.png" alt="Trust Bharosa">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="hero-slide" style="background: linear-gradient(135deg, #111827 0%, #312e81 100%);">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <span class="slide-badge">Aspiration</span>
+                        <h1>Local Contractor to <br><span>National Supplier.</span></h1>
+                        <p>We bridge the gap between "applying" and "winning." Let’s make your business the next success story.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-plans">Let's Win <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/frontend/hero_slide_5.png" alt="Success Story">
                     </div>
                 </div>
             </div>
@@ -64,6 +101,8 @@
             <span class="dot active" data-index="0"></span>
             <span class="dot" data-index="1"></span>
             <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
         </div>
     </div>
 </section>
