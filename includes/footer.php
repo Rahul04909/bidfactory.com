@@ -8,7 +8,8 @@
             <a href="#" class="logo">
                 <img src="assets/logo.png" alt="BidFactory Logo">
             </a>
-            <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We turn your vision into sustainable growth.</p>
+            <p>Empowering businesses with top-tier procurement, business enablement, and scalable digital solutions. We
+                turn your vision into sustainable growth.</p>
             <div class="social-links">
                 <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -35,11 +36,11 @@
             <ul class="contact-info">
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>New Delhi, India</span>
+                    <span>Sector 108, Gurugram, Haryana, India</span>
                 </li>
                 <li>
                     <i class="fas fa-phone-alt"></i>
-                    <a href="tel:+919876543210">+91-9876543210</a>
+                    <a href="tel:+919217102196">+91-9217102196</a>
                 </li>
                 <li>
                     <i class="fas fa-envelope"></i>
