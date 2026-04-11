@@ -4,7 +4,7 @@
 <section class="marketing-services-section">
     <div class="marketing-container">
         <!-- Section Header -->
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-down">
             <h2>Digital Marketing & Online Presence</h2>
             <p>Build a credible, visible digital identity for your business. Our Marketing Basic Package ensures your company is discoverable on Google, listed on social media and aggregators, and backed by a professional website.</p>
             
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Services Table -->
-        <div class="services-table-wrapper">
+        <div class="services-table-wrapper" data-aos="fade-up" data-aos-delay="100">
             <table class="marketing-table">
                 <thead>
                     <tr>
@@ -57,7 +57,7 @@
         </div>
 
         <!-- CTA Wrapper -->
-        <div class="cta-wrapper">
+        <div class="cta-wrapper" data-aos="zoom-in" data-aos-delay="200">
             <a href="https://wa.me/919876543210" class="btn-book-now">Book This Marketing Package</a>
         </div>
     </div>

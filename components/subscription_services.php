@@ -4,47 +4,47 @@
 <section class="subscription-services-section">
     <div class="sub-container">
         <!-- Sub Header -->
-        <div class="sub-header">
+        <div class="sub-header" data-aos="fade-down">
             <h2>Tender Sourcing & Proposal Development — Subscription</h2>
             <p>Our all-inclusive subscription covers tender sourcing and end-to-end proposal development for any government department — State, Central, PSU, or Global. One plan. Complete coverage.</p>
         </div>
 
         <!-- What's Included Header -->
-        <h3 class="features-title">What's Included</h3>
+        <h3 class="features-title" data-aos="fade-up">What's Included</h3>
     </div>
 
     <!-- Features Grid with Alternating Backgrounds -->
     <div class="features-grid">
         <!-- Feature 1 -->
-        <div class="feature-card dark-blue">
+        <div class="feature-card dark-blue" data-aos="fade-up" data-aos-delay="0">
             <i class="fas fa-search"></i>
             <h4>Keyword-Matched Identification</h4>
             <p>Tender identification across all government portals — State, Central, PSU and International.</p>
         </div>
 
         <!-- Feature 2 -->
-        <div class="feature-card teal">
+        <div class="feature-card teal" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-file-signature"></i>
             <h4>4 Proposals/Submissions</h4>
             <p>Up to 4 high-quality bid/proposal preparations and portal submissions per month.</p>
         </div>
 
         <!-- Feature 3 -->
-        <div class="feature-card dark-blue">
+        <div class="feature-card dark-blue" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-laptop-code"></i>
             <h4>End-to-End Development</h4>
             <p>Technical write-up, compliance check, and final digital portal submission management.</p>
         </div>
 
         <!-- Feature 4 -->
-        <div class="feature-card teal">
+        <div class="feature-card teal" data-aos="fade-up" data-aos-delay="300">
             <i class="fas fa-user-shield"></i>
             <h4>Dedicated Account Manager</h4>
             <p>A strategic partner for bid strategy development and opportunity prioritisation.</p>
         </div>
 
         <!-- Feature 5 -->
-        <div class="feature-card dark-blue">
+        <div class="feature-card dark-blue" data-aos="fade-up" data-aos-delay="400">
             <i class="fas fa-globe"></i>
             <h4>Global & Local Coverage</h4>
             <p>Covers Indian government tenders as well as global and international opportunities.</p>
@@ -54,8 +54,8 @@
     <div class="sub-container">
 
         <!-- Subscription Pricing -->
-        <h3 class="pricing-title">Subscription Pricing</h3>
-        <div class="pricing-table-wrapper">
+        <h3 class="pricing-title" data-aos="fade-up">Subscription Pricing</h3>
+        <div class="pricing-table-wrapper" data-aos="fade-up" data-aos-delay="100">
             <table class="sub-table">
                 <thead>
                     <tr>
@@ -79,7 +79,7 @@
         </div>
 
         <!-- Value Promo Callout -->
-        <div class="value-promo">
+        <div class="value-promo" data-aos="fade-up" data-aos-delay="200">
             <div class="promo-icon">
                 <i class="fas fa-lightbulb"></i>
             </div>
@@ -90,7 +90,7 @@
         </div>
 
         <!-- CTA Wrapper -->
-        <div class="sub-cta-wrapper">
+        <div class="sub-cta-wrapper" data-aos="zoom-in" data-aos-delay="300">
             <a href="https://wa.me/919876543210" class="btn-subscribe">Subscribe to Monthly Plan</a>
         </div>
     </div>

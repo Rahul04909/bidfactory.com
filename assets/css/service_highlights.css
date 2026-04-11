@@ -23,11 +23,11 @@
 
 /* Alternating Brand Colors from Reference Image */
 .highlight-card.dark-blue {
-    background-color: #0b213b;
+    background-color: var(--primary-color);
 }
 
 .highlight-card.teal {
-    background-color: #1d7a76;
+    background-color: var(--accent-color);
 }
 
 /* Hover Effect for Interactivity */
@@ -39,7 +39,7 @@
 }
 
 .highlight-card h3 {
-    color: #cfa64b; /* Gold/Yellow heading tint */
+    color: var(--secondary-color); /* Gold/Yellow heading tint */
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 15px;

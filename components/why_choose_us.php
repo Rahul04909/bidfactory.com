@@ -4,13 +4,13 @@
 <section class="why-choose-section">
     <div class="container">
         <!-- Section Header -->
-        <div class="why-choose-header">
+        <div class="why-choose-header" data-aos="fade-down">
             <span class="sub-title">Expertise & Trust</span>
             <h2>Why Choose BidFactory?</h2>
         </div>
 
         <!-- Narrative Content -->
-        <div class="why-choose-narrative">
+        <div class="why-choose-narrative" data-aos="fade-up" data-aos-delay="100">
             <p>
                 At BidFactory, we bridge the gap between complex government procurement and your business success. With deep-rooted expertise across <strong>GeM, CPP, and PSU portals</strong>, our team provides comprehensive end-to-end management—from initial registration to final bid submission. 
             </p>
@@ -25,7 +25,7 @@
 <section class="started-section">
     <div class="started-overlay"></div>
     <div class="started-container">
-        <div class="started-content">
+        <div class="started-content" data-aos="zoom-in" data-aos-delay="100">
             <h2>Let's Get Started</h2>
             <p>Transform your business potential into national success. Join hands with India's leading procurement experts.</p>
             <div class="started-actions">

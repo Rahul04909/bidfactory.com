@@ -42,7 +42,7 @@
     flex: 1.2;
     color: #fff;
     z-index: 2;
-    animation: slideInLeft 0.8s ease-out;
+    /* Removed redundant slide animation, let AOS or standard JS handle entrance */
 }
 
 .slide-badge {
@@ -68,7 +68,7 @@
 }
 
 .hero-content h1 span {
-    color: #ffd700; /* Highlight gold */
+    color: var(--secondary-color); /* Highlight gold */
 }
 
 .hero-content p {
@@ -89,8 +89,8 @@
 .btn-plans {
     display: inline-flex;
     align-items: center;
-    background: #fff;
-    color: #111;
+    background: var(--secondary-color);
+    color: #fff;
     padding: 16px 40px;
     border-radius: 50px;
     font-weight: 700;
@@ -135,7 +135,7 @@
     max-height: 480px;
     width: auto;
     object-fit: contain;
-    animation: slideInRight 0.8s ease-out;
+    /* Removed redundant slide animation */
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
 }
 

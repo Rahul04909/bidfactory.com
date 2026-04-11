@@ -4,7 +4,7 @@
 <section class="gem-services-section">
     <div class="gem-container">
         <!-- Section Header -->
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-down">
             <h2>GeM & Registration Services</h2>
             <p>Our profile creation and registration services help your business get fully compliant and listed on all major government procurement portals — quickly and accurately.</p>
             
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Services Table -->
-        <div class="services-table-wrapper">
+        <div class="services-table-wrapper" data-aos="fade-up" data-aos-delay="100">
             <table class="gem-table">
                 <thead>
                     <tr>
@@ -75,7 +75,7 @@
         </div>
 
         <!-- CTA Wrapper -->
-        <div class="cta-wrapper">
+        <div class="cta-wrapper" data-aos="zoom-in" data-aos-delay="200">
             <a href="https://wa.me/919876543210" class="btn-book-now">Book This Package Now</a>
         </div>
     </div>
