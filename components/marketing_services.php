@@ -8,8 +8,11 @@
             <h2>Digital Marketing & Online Presence</h2>
             <p>Build a credible, visible digital identity for your business. Our Marketing Basic Package ensures your company is discoverable on Google, listed on social media and aggregators, and backed by a professional website.</p>
             
-            <div class="pricing-badge">
-                Marketing Basic Package | <span>₹8,999</span> + Website Charge
+            <div class="badge-wrapper">
+                <span class="promo-label blinking">BEST FOR MARKETING</span>
+                <div class="pricing-badge">
+                    Marketing Basic Package | <span>₹8,999</span> + Website Charge
+                </div>
             </div>
             <p style="font-weight: 700; color: #0b213b; font-size: 0.95rem; margin-top: -10px;">
                 ₹15,000 one-time for website creation (up to 10 pages). All other items included in the package.

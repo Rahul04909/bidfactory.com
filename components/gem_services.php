@@ -8,8 +8,11 @@
             <h2>GeM & Registration Services</h2>
             <p>Our profile creation and registration services help your business get fully compliant and listed on all major government procurement portals — quickly and accurately.</p>
             
-            <div class="pricing-badge">
-                One-Time Package | Bundled at <span>₹8,999</span>
+            <div class="badge-wrapper">
+                <span class="promo-label blinking">BEST SELLER</span>
+                <div class="pricing-badge">
+                    One-Time Package | Bundled at <span>₹8,999</span>
+                </div>
             </div>
             <p style="font-weight: 700; color: #0b213b; font-size: 0.95rem; margin-top: -10px;">
                 Includes GeM registration + all sub-items below. (Additional charges apply as noted).
