@@ -1,7 +1,7 @@
 <!-- Hero Section Component -->
 <link rel="stylesheet" href="assets/css/hero.css?v=<?php echo time(); ?>">
 
-<section class="hero-slider-section">
+<section class="hero-slider-section" data-aos="fade-in" data-aos-duration="1200">
     <div class="slider-container" id="heroSlider">
         <div class="slider-wrapper">
             <!-- Slide 1 -->

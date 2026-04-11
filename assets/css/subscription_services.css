@@ -18,7 +18,7 @@
 
 .sub-header h2 {
     font-size: 2.8rem;
-    color: #0b213b;
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -1px;
@@ -35,7 +35,7 @@
 /* What's Included Feature Grid - Matches Service Highlights Style */
 .features-title {
     font-size: 2rem;
-    color: #0b213b;
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 40px !important;
     text-align: center;
@@ -61,17 +61,17 @@
 
 /* Alternating Brand Colors */
 .feature-card.dark-blue {
-    background-color: #0b213b;
+    background-color: var(--primary-color);
 }
 
 .feature-card.teal {
-    background-color: #1d7a76;
+    background-color: var(--accent-color);
 }
 
 
 .feature-card i {
     font-size: 2.5rem;
-    color: #cfa64b; /* Gold Icon */
+    color: var(--secondary-color); /* Gold Icon */
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.1);
     width: 70px;
@@ -83,7 +83,7 @@
 }
 
 .feature-card h4 {
-    color: #cfa64b; /* Gold Heading to match Highlights */
+    color: var(--secondary-color); /* Gold Heading to match Highlights */
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 15px;
@@ -101,7 +101,7 @@
 /* Pricing Table */
 .pricing-title {
     font-size: 1.8rem;
-    color: #0b213b;
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 40px;
     text-align: center;
@@ -110,7 +110,7 @@
 .pricing-table-wrapper {
     overflow-x: auto;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
     border: 1px solid #e2e8f0;
     margin-bottom: 40px;
 }
@@ -123,7 +123,7 @@
 }
 
 .sub-table th {
-    background-color: #0b213b;
+    background-color: var(--primary-color);
     color: #ffffff;
     padding: 25px 20px;
     font-weight: 800;
@@ -141,7 +141,7 @@
 
 .sub-table .plan-name {
     font-weight: 800;
-    color: #0b213b;
+    color: var(--primary-color);
     font-size: 1.2rem;
     width: 25%;
 }
@@ -161,7 +161,7 @@
 
 .sub-table .best-value {
     background-color: #fffbeb;
-    color: #cfa64b;
+    color: var(--secondary-color);
     font-weight: 900;
     text-align: center;
     position: relative;
@@ -185,7 +185,7 @@
 
 /* Value Promo */
 .value-promo {
-    background: #0b213b;
+    background: var(--primary-color);
     color: #fff;
     padding: 30px;
     border-radius: 16px;
@@ -197,11 +197,11 @@
 
 .value-promo .promo-icon {
     font-size: 2.5rem;
-    color: #cfa64b;
+    color: var(--secondary-color);
 }
 
 .value-promo .promo-text h3 {
-    color: #cfa64b;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 800;
     margin-bottom: 8px;
@@ -220,14 +220,14 @@
 }
 
 .btn-subscribe {
-    background-color: #1d7a76;
+    background-color: var(--accent-color);
     color: #ffffff;
     padding: 20px 60px;
     border-radius: 50px;
     font-size: 1.3rem;
     font-weight: 800;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     display: inline-block;
     box-shadow: 0 8px 30px rgba(29, 122, 118, 0.3);
     border: none;
@@ -236,7 +236,7 @@
 }
 
 .btn-subscribe:hover {
-    background-color: #0b213b;
+    background-color: var(--primary-color);
     transform: translateY(-4px);
     box-shadow: 0 15px 40px rgba(11, 33, 59, 0.4);
 }

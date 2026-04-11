@@ -17,7 +17,7 @@
 
 .section-header h2 {
     font-size: 2.8rem;
-    color: #0b213b;
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -1px;
@@ -33,7 +33,7 @@
 
 /* Pricing Badge */
 .pricing-badge {
-    background: linear-gradient(135deg, #0b213b 0%, #1d7a76 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     color: #ffffff;
     display: inline-block;
     padding: 15px 30px;
@@ -41,12 +41,12 @@
     font-weight: 700;
     font-size: 1.1rem;
     box-shadow: 0 10px 20px rgba(11, 33, 59, 0.2);
-    border: 2px solid #cfa64b;
+    border: 2px solid var(--secondary-color);
     margin-bottom: 20px;
 }
 
 .pricing-badge span {
-    color: #cfa64b;
+    color: var(--secondary-color);
 }
 
 /* Services Table Styling */
@@ -54,7 +54,7 @@
     overflow-x: auto;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow);
     border: 1px solid #e2e8f0;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .gem-table thead th {
-    background-color: #0b213b;
+    background-color: var(--primary-color);
     color: #ffffff;
     padding: 20px;
     font-weight: 700;
@@ -124,14 +124,14 @@
 }
 
 .btn-book-now {
-    background-color: #cfa64b;
+    background-color: var(--secondary-color);
     color: #ffffff;
     padding: 18px 45px;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: 800;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     display: inline-block;
     box-shadow: 0 6px 20px rgba(207, 166, 75, 0.3);
     border: none;
@@ -140,7 +140,7 @@
 }
 
 .btn-book-now:hover {
-    background-color: #0b213b;
+    background-color: var(--primary-color);
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(11, 33, 59, 0.4);
 }

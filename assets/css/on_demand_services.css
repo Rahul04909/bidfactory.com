@@ -17,7 +17,7 @@
 
 .on-demand-header h2 {
     font-size: 2.8rem;
-    color: #0b213b;
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -1px;
@@ -42,9 +42,9 @@
     background: #ffffff;
     padding: 40px 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow);
     border: 1px solid #e2e8f0;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: var(--transition);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -53,15 +53,15 @@
 
 .on-demand-card:hover {
     transform: translateY(-8px);
-    border-color: #1d7a76;
+    border-color: var(--accent-color);
     box-shadow: 0 20px 40px rgba(29, 122, 118, 0.1);
 }
 
 .on-demand-card .card-icon {
     font-size: 2.5rem;
-    color: #cfa64b;
+    color: var(--secondary-color);
     margin-bottom: 25px;
-    transition: transform 0.3s ease;
+    transition: var(--transition);
 }
 
 .on-demand-card:hover .card-icon {
@@ -69,7 +69,7 @@
 }
 
 .on-demand-card h3 {
-    color: #0b213b;
+    color: var(--primary-color);
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 15px;
@@ -96,7 +96,7 @@
 .price-tag .amount {
     font-size: 1.2rem;
     font-weight: 800;
-    color: #1d7a76;
+    color: var(--accent-color);
 }
 
 .price-tag .label {
@@ -109,8 +109,8 @@
 
 /* Alternate Card Style */
 .on-demand-card.alternate {
-    background: #0b213b;
-    border-color: #0b213b;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .on-demand-card.alternate h3, 
@@ -123,7 +123,7 @@
 }
 
 .on-demand-card.alternate .amount {
-    color: #cfa64b;
+    color: var(--secondary-color);
 }
 
 /* Responsive Grid */

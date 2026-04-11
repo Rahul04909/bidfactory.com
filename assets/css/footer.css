@@ -1,9 +1,9 @@
 /* Footer CSS - Professional & Responsive Redesign */
 .footer {
-    background-color: #0b213b; /* Deep Navy from reference */
+    background-color: var(--primary-color);
     color: #f3f4f6;
     padding: 80px 5% 30px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -58,10 +58,10 @@
 }
 
 .social-link:hover {
-    background: #006aff;
+    background: var(--accent-color);
     transform: translateY(-5px);
-    border-color: #006aff;
-    box-shadow: 0 5px 15px rgba(0, 106, 255, 0.3);
+    border-color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(29, 122, 118, 0.3);
 }
 
 /* Footer Link Columns */
@@ -81,7 +81,7 @@
     left: 0;
     width: 35px;
     height: 3px;
-    background-color: #006aff;
+    background-color: var(--secondary-color);
     border-radius: 2px;
 }
 
@@ -106,7 +106,7 @@
 
 .footer-column ul li a i {
     font-size: 0.75rem;
-    color: #006aff;
+    color: var(--accent-color);
 }
 
 .footer-column ul li a:hover {
@@ -124,7 +124,7 @@
 }
 
 .contact-info li i {
-    color: #006aff;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     width: 20px;
     text-align: center;
