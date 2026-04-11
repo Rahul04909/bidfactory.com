@@ -31,18 +31,51 @@
     line-height: 1.6;
 }
 
+/* Pricing Badge Wrapper */
+.badge-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.promo-label {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(207, 166, 75, 0.4);
+    pointer-events: none;
+    letter-spacing: 1px;
+}
+
+.blinking {
+    animation: blinking-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes blinking-pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
 /* Pricing Badge */
 .pricing-badge {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
     color: #ffffff;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 40px;
     border-radius: 50px;
     font-weight: 700;
-    font-size: 1.1rem;
-    box-shadow: 0 10px 20px rgba(29, 122, 118, 0.2);
+    font-size: 1.15rem;
+    box-shadow: 0 10px 30px rgba(11, 33, 59, 0.15), 0 0 20px rgba(29, 122, 118, 0.1);
     border: 2px solid var(--secondary-color);
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .pricing-badge span {
