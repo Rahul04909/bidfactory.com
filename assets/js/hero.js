@@ -16,10 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
         currentIndex = index;
         wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
         
-        // Update dots
-        dots.forEach(dot => dot.classList.remove('active'));
-        if (dots[currentIndex]) {
-            dots[currentIndex].classList.add('active');
+        // Update dots if they exist
+        if (dots.length > 0) {
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[currentIndex]) {
+                dots[currentIndex].classList.add('active');
+            }
         }
 
         // Reset slide animations to re-trigger them
