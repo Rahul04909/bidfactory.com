@@ -1,55 +1,35 @@
-<!-- Why Choose BidFactory Component - Professional Authority Grid -->
-<link rel="stylesheet" href="assets/css/why_choose_us.css">
+<!-- Why Choose BidFactory Component -->
+<link rel="stylesheet" href="assets/css/why_choose_us.css?v=<?php echo time(); ?>">
 
 <section class="why-choose-section">
-    <!-- Section Header -->
-    <div class="why-choose-header">
-        <h2>Why Choose BidFactory?</h2>
+    <div class="container">
+        <!-- Section Header -->
+        <div class="why-choose-header">
+            <span class="sub-title">Expertise & Trust</span>
+            <h2>Why Choose BidFactory?</h2>
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="why-choose-narrative">
+            <p>
+                At BidFactory, we bridge the gap between complex government procurement and your business success. With deep-rooted expertise across <strong>GeM, CPP, and PSU portals</strong>, our team provides comprehensive end-to-end management—from initial registration to final bid submission. 
+            </p>
+            <p>
+                Based in Delhi NCR, we offer strategic liasoning and representation combined with affordable, scalable solutions tailored for MSMEs. We ensure your bids are never held back by technical hurdles, allowing you to focus on what you do best: growing your business.
+            </p>
+        </div>
     </div>
+</section>
 
-    <!-- Grid with Alternating Backgrounds -->
-    <div class="why-choose-grid">
-        <!-- Expertise Item -->
-        <div class="why-choose-item dark-blue">
-            <div class="why-choose-icon">
-                <i class="fas fa-shield-alt"></i>
-            </div>
-            <div class="why-choose-content">
-                <h3>Government Procurement Expertise</h3>
-                <p>Deep domain knowledge across GeM, CPP, CPPP and PSU processes.</p>
-            </div>
-        </div>
-
-        <!-- Management Item -->
-        <div class="why-choose-item teal">
-            <div class="why-choose-icon">
-                <i class="fas fa-cogs"></i>
-            </div>
-            <div class="why-choose-content">
-                <h3>End-to-End Management</h3>
-                <p>From registration to bid submission — we manage the entire process.</p>
-            </div>
-        </div>
-
-        <!-- Presence Item -->
-        <div class="why-choose-item teal">
-            <div class="why-choose-icon">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="why-choose-content">
-                <h3>Delhi NCR Presence</h3>
-                <p>Physical presence in Delhi NCR for liaison, meetings and representation.</p>
-            </div>
-        </div>
-
-        <!-- Scalability Item -->
-        <div class="why-choose-item dark-blue">
-            <div class="why-choose-icon">
-                <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="why-choose-content">
-                <h3>Affordable & Scalable</h3>
-                <p>Flexible plans from one-time registrations to annual subscriptions.</p>
+<!-- Let's Get Started Section -->
+<section class="started-section">
+    <div class="started-overlay"></div>
+    <div class="started-container">
+        <div class="started-content">
+            <h2>Let's Get Started</h2>
+            <p>Transform your business potential into national success. Join hands with India's leading procurement experts.</p>
+            <div class="started-actions">
+                <a href="#contact" class="btn-started">Book a Free Consultation <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
