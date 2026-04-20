@@ -44,7 +44,8 @@
                 </li>
                 <li>
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:contact@bidfactory.co.in">contact@bidfactory.co.in</a>
+                    <a href="mailto:info@bidfactory.co.in">info@bidfactory.co.in</a>
+                    <a href="factorybid@gmail.com">factorybid@gmail.com</a>
                 </li>
                 <li>
                     <i class="fas fa-clock"></i>
@@ -68,7 +69,7 @@
 <!-- AOS Animation JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         AOS.init({
             duration: 800,
             easing: 'ease-out-cubic',
@@ -79,4 +80,5 @@
 </script>
 
 </body>
+
 </html>
