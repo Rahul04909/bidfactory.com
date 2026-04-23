@@ -12,15 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom Header CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
 </head>
@@ -64,7 +65,7 @@
 
         <div class="header-ctas">
             <a href="tel:+919876543210" class="btn-call">
-                <i class="fas fa-phone-alt"></i> +91-9876543210
+                <i class="fas fa-phone-alt"></i> +91-9217102196
             </a>
             <a href="#" class="btn-quote">Get Started</a>
         </div>
