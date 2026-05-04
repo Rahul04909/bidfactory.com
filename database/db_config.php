@@ -13,8 +13,8 @@ require_once __DIR__ . '/phpauth/Auth.php';
 
 // Database connection parameters
 $host = 'localhost';
-$dbname = 'jhdindus_bidfactory';
-$user = 'jhdindus_bidfactory';
+$dbname = 'bidfactory-35303839d3ba';
+$user = 'bidfactory-35303839d3ba';
 $pass = 'Rd14072003@./';
 
 try {
